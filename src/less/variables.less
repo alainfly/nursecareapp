@@ -1,0 +1,103 @@
+// Color variables (appears count calculates by raw css)
+@color0: #fff; 
+@bars-background: #333300;// Appears 2 times
+@brun:#333300;
+@menubgr:#222;
+// Width variables (appears count calculates by raw css)
+@width0: 100%; // Appears 2 times
+
+
+.navbar-app {
+	.btn {
+		background: @bars-background;
+		border: @brun;
+		color: @color0;
+		line-height: 50px;
+		padding-bottom: 0;
+		padding-top: 0;
+		text-transform: uppercase;
+	}
+	.btn-navbar {
+		background: @bars-background;
+		border: @brun;
+		color: @color0;
+		line-height: 50px;
+		padding-bottom: 0;
+		padding-top: 0;
+		text-transform: uppercase;
+	}
+	.navbar-app, .navbar-app .btn, .navbar-app .btn-navbar {
+    color: @color0;
+    background: @bars-background;
+}
+
+}
+
+.navbar-app {
+	background: @brun;
+	border-color: @brun;
+	border-style: solid;
+	border-width: 1px;
+	color: @color0;
+	min-height: 50px;
+}
+
+
+.list-group-item.active {
+	background-color: @menubgr;
+	border-color: @brun;
+	color: @color0;
+	z-index: 2;
+	&:focus {
+		background-color: @brun;
+		border-color: @brun;
+		color: @color0;
+		z-index: 2;
+	}
+}
+
+.app-name {
+	background-color: @menubgr;
+	color: @color0;
+	font-size: 23px;
+	line-height: 70px;
+	margin: 0;
+	padding: 0 10px;
+	position: relative;
+	width: @width0;
+	z-index: 10;
+}
+.sidebar-header {
+	background-color: @menubgr;
+	color: @color0;
+	font-size: 23px;
+	line-height: 70px;
+	margin: 0;
+	padding: 0 10px;
+	position: relative;
+	width: @width0;
+	z-index: 10;
+}
+.list-group-item {
+	background-color: @menubgr;
+	display: block;
+	padding: 10px 15px;
+	position: relative;
+}
+.list-patient {
+	background-color: @color0;
+	display: block;
+	padding: 10px 15px;
+	position: relative;
+}
+
+.list-group-item {
+	border-color: @brun;
+	border: 0;
+	margin-bottom: 0;
+}
+a.list-group-item {
+	border-color: @brun;
+	border: 0;
+	margin-bottom: 0;
+}
